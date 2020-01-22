@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+  getir-case-study:
+    image: getir-case-study
+    build: .
+    environment:
+      NODE_ENV: production
+      NODE_PORT: "3000"
+      Mongo_Ip: ds249623.mlab.com:49623
+      Mongo_User: dbUser:dbPassword1
+      Mongo_Db: getir-case-study
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: node --inspect=0.0.0.0:9229 src/index.js
+    networks: 
+      - getir
+
+networks:
+  getir:
+    external: true 

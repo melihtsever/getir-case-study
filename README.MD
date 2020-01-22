@@ -66,14 +66,14 @@ Heroku URL : http://getir-case-study.herokuapp.com
 
 ## Run (Docker-Compose)
 ```
-$ git git@github.com:melihtsever/getir-case-study.git
+$ git clone git@github.com:melihtsever/getir-case-study.git
 $ cd getir-case-study
 docker-compose -f "docker-compose.yml" up -d --build
 ```
 
 ## Run (Dev)
 ```
-$ git git@github.com:melihtsever/getir-case-study.git
+$ git clone git@github.com:melihtsever/getir-case-study.git
 $ cd getir-case-study
 $ npm install
 $ npm run dev
@@ -81,7 +81,7 @@ $ npm run dev
 
 ## Run (Test)
 ```
-$ git git@github.com:melihtsever/getir-case-study.git
+$ git clone git@github.com:melihtsever/getir-case-study.git
 $ cd getir-case-study
 $ npm install
 $ npm test

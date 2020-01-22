@@ -8,10 +8,7 @@ services:
     environment:
       NODE_ENV: development
       PORT: "3000"
-      Mongo_Ip: ds249623.mlab.com:49623
-      Mongo_User: dbUser:dbPassword1
-      Mongo_Db: getir-case-study
-      
+      Mongo: mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study
     ports:
       - 3000:3000
       - "9200:9200"

@@ -68,7 +68,7 @@ Heroku URL : http://getir-case-study.herokuapp.com
 ```
 $ git clone git@github.com:melihtsever/getir-case-study.git
 $ cd getir-case-study
-docker-compose -f "docker-compose.yml" up -d --build
+$ docker-compose -f "docker-compose.yml" up -d --build
 ```
 
 ## Run (Dev)

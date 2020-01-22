@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 //     useUnifiedTopology: true
 // })
 
-mongoose.connect(`mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study`, {
+mongoose.connect(process.env.Mongo, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,

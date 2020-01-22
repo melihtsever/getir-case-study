@@ -5,9 +5,9 @@ Heroku URL : http://getir-case-study.herokuapp.com
 
 ## Endpoints
 
-**url :** `/records`  
-**method :** `POST`  
-**request params :** 
+**Url :** `/records`  
+**Method :** `POST`  
+**Request parameters :** 
 
 |  Name | Type  | Description  |
 |---|---|---|
@@ -17,7 +17,7 @@ Heroku URL : http://getir-case-study.herokuapp.com
 | maxCount  | integer | Maximum Sum of the “count”  |
 
 
-**response codes :** 
+**Response codes :** 
 
 |  code | Description  |
 |---|---|
@@ -32,14 +32,14 @@ Heroku URL : http://getir-case-study.herokuapp.com
 
 ### Example 
 
-**request json**
+**Request json**
 ```json
 {
   "startDate": "2017-02-21", "endDate": "2020-02-22","minCount": 10 , "maxCount": 501
 }
 ```
 
-**response :**
+**Response :**
 ```json
 {
     "code": 0,
@@ -64,14 +64,14 @@ Heroku URL : http://getir-case-study.herokuapp.com
 }
 ```
 
-## Run (Docker Compose)
+## Run (Docker-Compose)
 ```
 $ git git@github.com:melihtsever/getir-case-study.git
 $ cd getir-case-study
 docker-compose -f "docker-compose.yml" up -d --build
 ```
 
-## Run (DEV)
+## Run (Dev)
 ```
 $ git git@github.com:melihtsever/getir-case-study.git
 $ cd getir-case-study
@@ -79,8 +79,11 @@ $ npm install
 $ npm run dev
 ```
 
-## Run Test
+## Run (Test)
 ```
+$ git git@github.com:melihtsever/getir-case-study.git
+$ cd getir-case-study
+$ npm install
 $ npm test
 ```
 

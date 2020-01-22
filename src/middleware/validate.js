@@ -2,7 +2,7 @@ const Joi = require('joi');
 var { responseHandler } = require("./response");
 
 
-
+// validation of Request Payload Model
 var validate = function functionA(schema) {
     return (req, res, next) => {
         const options = {

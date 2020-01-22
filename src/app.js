@@ -7,6 +7,8 @@ const { handleResponse } = require("./middleware/response");
 
 app.use(express.json())
 app.use(recordRouter)
+
+// for response middleware
 app.use((responseHandler, req, res, next) => {
     handleResponse(responseHandler, res);
 });

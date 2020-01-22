@@ -11,6 +11,7 @@ const responseHandler = (code, msg, records = []) => {
     2  : Request parameter required,
     3  : Request parameter date formats [YYYY-MM-DD] validation
 */
+
 const handleResponse = (responseHandler, res) => {
     res.send({
         code: responseHandler.code,

@@ -6,9 +6,7 @@ var { responseHandler } = require("../middleware/response");
 
 
 
-router.get('/error', (req, res) => {
-    throw new ErrorHandler(500, 'Internal server error');
-})
+
 router.post('/records', [validate(schema)], async (req, res, next) => {
     try {
         const { startDate, endDate, minCount, maxCount } = req.body;
